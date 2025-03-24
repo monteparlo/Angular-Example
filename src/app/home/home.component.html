@@ -1,0 +1,16 @@
+<app-greeting [message]="homeMessage()" />
+<br>
+<app-counter /> <br><br>
+
+<p>Feel free to type a message!*<br> 
+
+    <input 
+    placeholder="Type Something..." 
+    type="text"
+    (keyup)="keyUpHandler($event)"
+    /> 
+    <br>
+    <i style="font-size: 10px;">*It doesn't do anything, I just thought it was cool.*</i></p>
+
+
+

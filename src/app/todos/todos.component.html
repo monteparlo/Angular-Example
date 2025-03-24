@@ -1,0 +1,20 @@
+<h3>TO DO LIST</h3>
+
+@if (!todoItems().length){
+    <p>Loading ...</p>
+}
+<form>
+    <label>Filter To Do Items</label>
+    <p style="font-size: 16px;"><i>Uses a <a href="https://jsonplaceholder.typicode.com/todos">JSON Placeholder Api</a> to run.</i></p>
+    <input 
+        name="searchTerm"
+        [(ngModel)]="searchTerm" 
+        placeholder="Search For Item.." 
+    />
+</form>
+
+<ul class="todos">
+    @for (todo of todoItems() | filterTodos : searchTerm(); track todo.id) {
+        <app-todo-item (todoToggled)="updateTodoItem($event)" [todo]="todo" />
+    }
+</ul>

@@ -1,0 +1,25 @@
+
+
+.todos {
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 3vh;
+        padding: 3vh;
+    }
+}
+
+form, h3 {
+    margin: 10%;
+    input {
+        padding: 7px;
+    }
+}
+
+h3 {
+    font-size: 70px;
+}
+
+a {
+    color: pink;
+}

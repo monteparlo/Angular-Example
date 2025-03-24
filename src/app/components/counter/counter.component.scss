@@ -1,0 +1,22 @@
+div, p {
+    gap: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+p {
+    font-size: 50px;
+}
+
+button {
+    background-color: #675cb9;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+    &:hover {
+        background-color: aqua;
+    }
+}
